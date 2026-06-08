@@ -29,7 +29,7 @@ const disciplines = [
     subtitle: "El arte de la efectividad total",
     shortDesc: "Combina el golpeo de pie con el agarre y la lucha en el suelo. El deporte de combate con mayor crecimiento del mundo, adaptado para ti.",
     longDesc: "Nuestras clases de MMA en Sevilla integran de forma fluida técnicas de boxeo, muay thai, lucha olímpica y jiu-jitsu. Aprenderás las transiciones cruciales entre la distancia de golpeo, el trabajo en la jaula (clinch) y el control en el suelo.",
-    image: "https://images.unsplash.com/photo-1517438476312-10d79c077509?q=80&w=800&auto=format&fit=crop",
+    image: "/mma.avif",
     color: "from-red-600 to-black",
     glowColor: "rgba(239, 68, 68, 0.4)",
     borderColor: "border-red-500/30",
@@ -48,7 +48,7 @@ const disciplines = [
     subtitle: "El camino de la sumisión y la inteligencia",
     shortDesc: "El arte marcial donde la técnica y el apalancamiento superan a la fuerza bruta. Controla y somete a tu oponente en el suelo.",
     longDesc: "Especialízate en BJJ en Sevilla con el Maestro Marcelo. El Jiu-Jitsu brasileño se enfoca en llevar al oponente al suelo y aplicar llaves de articulación o estrangulaciones para forzar la rendición, perfecto para defensa personal y competición.",
-    image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=800&auto=format&fit=crop",
+    image: "/bjj.jpg",
     color: "from-amber-500 to-black",
     glowColor: "rgba(251, 191, 36, 0.4)",
     borderColor: "border-amber-500/30",
@@ -67,7 +67,7 @@ const disciplines = [
     subtitle: "Preparación real para el mundo exterior",
     shortDesc: "Aprende a identificar amenazas, desescalar conflictos y actuar con máxima eficacia bajo estrés en situaciones de peligro real.",
     longDesc: "Diseñado para hombres y mujeres de todas las edades. No entrenamos para ganar medallas, sino para regresar seguros a casa. Métodos sencillos, eficientes y basados en la biomecánica corporal.",
-    image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop",
+    image: "/dojo.jpg",
     color: "from-zinc-500 to-black",
     glowColor: "rgba(228, 228, 231, 0.4)",
     borderColor: "border-zinc-500/30",
@@ -362,7 +362,7 @@ export default function Home() {
               {/* Overlay shadow */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#050506] via-transparent to-transparent z-10" />
               <Image
-                src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1200&auto=format&fit=crop"
+                src="/dojo.jpg"
                 alt="MMA y BJJ entrenamiento en Sevilla"
                 fill
                 priority
@@ -558,7 +558,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="relative h-60 rounded-xl overflow-hidden border border-zinc-800 group">
                   <Image
-                    src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=600&q=80"
+                    src="/marcelo-entrenador.jpeg"
                     alt="Entrenador Marcelo de MMA Sevilla"
                     fill
                     className="object-cover brightness-50 group-hover:scale-105 transition-transform duration-500"
@@ -588,7 +588,7 @@ export default function Home() {
                 </div>
                 <div className="relative h-60 rounded-xl overflow-hidden border border-zinc-800 group">
                   <Image
-                    src="https://images.unsplash.com/photo-1517438476312-12d7a0be0843?auto=format&fit=crop&w=600&q=80"
+                    src="/bjj.jpg"
                     alt="Clases de Jiu-Jitsu en Sevilla"
                     fill
                     className="object-cover brightness-50 group-hover:scale-105 transition-transform duration-500"
