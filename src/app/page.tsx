@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Flame,
@@ -942,6 +943,19 @@ export default function Home() {
             <span className="font-heading font-bold text-sm tracking-tight text-white">
               MARCELO&apos;S SCHOOL • SEVILLA
             </span>
+          </div>
+
+          {/* Enlaces Legales */}
+          <div className="flex flex-wrap justify-center gap-6 text-xs text-zinc-500">
+            <Link href="/aviso-legal" className="hover:text-red-500 transition-colors">
+              Aviso Legal
+            </Link>
+            <Link href="/politica-de-privacidad" className="hover:text-red-500 transition-colors">
+              Política de Privacidad
+            </Link>
+            <Link href="/politica-de-cookies" className="hover:text-red-500 transition-colors">
+              Política de Cookies
+            </Link>
           </div>
 
           <p className="text-xs text-zinc-500 text-center md:text-right">
