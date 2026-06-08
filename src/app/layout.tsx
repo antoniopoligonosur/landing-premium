@@ -43,6 +43,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://marcelosschoolsevilla.com",
   },
+  icons: {
+    icon: "/favicon.jpeg",
+  },
 };
 
 const jsonLd = {
