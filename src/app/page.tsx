@@ -558,7 +558,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="relative h-60 rounded-xl overflow-hidden border border-zinc-800 group">
                   <Image
-                    src="https://images.unsplash.com/photo-1599058918144-1feabb0ab9a2?q=80&w=600&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=600&q=80"
                     alt="Entrenador Marcelo de MMA Sevilla"
                     fill
                     className="object-cover brightness-50 group-hover:scale-105 transition-transform duration-500"
@@ -588,7 +588,7 @@ export default function Home() {
                 </div>
                 <div className="relative h-60 rounded-xl overflow-hidden border border-zinc-800 group">
                   <Image
-                    src="https://images.unsplash.com/photo-1576007161105-75a5351a4b90?q=80&w=600&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1517438476312-12d7a0be0843?auto=format&fit=crop&w=600&q=80"
                     alt="Clases de Jiu-Jitsu en Sevilla"
                     fill
                     className="object-cover brightness-50 group-hover:scale-105 transition-transform duration-500"
