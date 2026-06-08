@@ -272,7 +272,13 @@ export default function Home() {
         {/* Decorative Grid Overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,#050506_80%)] pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10 w-full"
+        >
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
@@ -379,12 +385,18 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* DISCIPLINES SECTION */}
       <section id="disciplinas" className="py-24 sm:py-32 border-t border-zinc-950 bg-gradient-to-b from-[#050506] to-[#0a0a0c] relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        >
           
           <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
             <h2 className="text-red-500 text-xs font-bold uppercase tracking-widest mb-3">Nuestras Especialidades</h2>
@@ -527,12 +539,18 @@ export default function Home() {
             })}
           </div>
 
-        </div>
+        </motion.div>
       </section>
 
       {/* SOBRE EL DOJO SECTION */}
       <section id="sobre-nosotros" className="py-24 sm:py-32 bg-[#050506] border-t border-zinc-950 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
             {/* Left side image collage */}
@@ -623,12 +641,18 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* SEO / GEO LOCAL & FAQ SECTION */}
       <section id="faq" className="py-24 sm:py-32 bg-gradient-to-b from-[#0a0a0c] to-[#050506] border-t border-zinc-950 relative">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
+        >
           
           <div className="text-center mb-16">
             <h2 className="text-red-500 text-xs font-bold uppercase tracking-widest mb-3">SEO y Dudas Frecuentes</h2>
@@ -692,12 +716,18 @@ export default function Home() {
             ))}
           </div>
 
-        </div>
+        </motion.div>
       </section>
 
       {/* CONTACTO SECTION */}
       <section id="contacto" className="py-24 sm:py-32 bg-[#050506] border-t border-zinc-950 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        >
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             
@@ -930,7 +960,7 @@ export default function Home() {
             </div>
           </div>
 
-        </div>
+        </motion.div>
       </section>
 
       {/* FOOTER */}
