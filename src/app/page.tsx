@@ -519,13 +519,19 @@ export default function Home() {
             {/* Left side image collage */}
             <div className="lg:col-span-5 grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="relative h-60 rounded-xl overflow-hidden border border-zinc-800">
+                <div className="relative h-60 rounded-xl overflow-hidden border border-zinc-800 group">
                   <Image
                     src="https://images.unsplash.com/photo-1599058918144-1feabb0ab9a2?q=80&w=600&auto=format&fit=crop"
                     alt="Entrenador Marcelo de MMA Sevilla"
                     fill
-                    className="object-cover brightness-75 hover:scale-105 transition-transform duration-500"
+                    className="object-cover brightness-50 group-hover:scale-105 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+                  <div className="absolute inset-0 p-5 flex flex-col justify-end">
+                    <p className="font-heading font-bold text-sm text-white leading-snug">
+                      Entrenador Marcelo de MMA Sevilla
+                    </p>
+                  </div>
                 </div>
                 <div className="bg-[#121214] border border-zinc-800 rounded-xl p-6 flex flex-col justify-center items-center text-center">
                   <span className="w-12 h-12 bg-red-950/40 rounded-full flex items-center justify-center border border-red-500/20 text-red-500 mb-3">
@@ -543,13 +549,19 @@ export default function Home() {
                   <span className="text-2xl font-bold font-heading text-white">Faixa Preta</span>
                   <span className="text-[10px] text-zinc-300 uppercase tracking-widest font-semibold mt-1">BJJ Certificado</span>
                 </div>
-                <div className="relative h-60 rounded-xl overflow-hidden border border-zinc-800">
+                <div className="relative h-60 rounded-xl overflow-hidden border border-zinc-800 group">
                   <Image
                     src="https://images.unsplash.com/photo-1576007161105-75a5351a4b90?q=80&w=600&auto=format&fit=crop"
                     alt="Clases de Jiu-Jitsu en Sevilla"
                     fill
-                    className="object-cover brightness-75 hover:scale-105 transition-transform duration-500"
+                    className="object-cover brightness-50 group-hover:scale-105 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+                  <div className="absolute inset-0 p-5 flex flex-col justify-end">
+                    <p className="font-heading font-bold text-sm text-white leading-snug">
+                      Clases de Jiu-Jitsu en Sevilla
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
