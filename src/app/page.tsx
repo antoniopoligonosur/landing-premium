@@ -128,10 +128,28 @@ export default function Home() {
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1200));
-    setIsSubmitting(false);
-    setFormSubmitted(true);
+    try {
+      const response = await fetch("/api/reservation", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      
+      if (response.ok && data.success) {
+        setFormSubmitted(true);
+      } else {
+        alert(data.error || "Hubo un error al procesar tu reserva. Inténtalo de nuevo.");
+      }
+    } catch (err) {
+      console.error("Error al enviar el formulario:", err);
+      alert("Error de conexión. Por favor, comprueba tu red e inténtalo de nuevo.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // Scroll to section helper
@@ -773,7 +791,7 @@ export default function Home() {
             </div>
 
             {/* Right Column: Interactive Form */}
-            <div className="lg:col-span-6 bg-[#121214] border border-zinc-800 rounded-2xl p-6 sm:p-10 shadow-2xl shadow-black/80 relative">
+            <div className="lg:col-span-6 bg-[#121214] border border-zinc-800 rounded-2xl p-6 sm:p-8 shadow-2xl shadow-black/80 relative h-auto self-start">
               <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/5 rounded-full blur-[100px] pointer-events-none" />
 
               <AnimatePresence mode="wait">
